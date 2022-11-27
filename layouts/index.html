@@ -1,0 +1,50 @@
+{{ define "main" }}
+
+<h1>About</h1>
+
+<p>
+I'm a final-year undergraduate student @<a href="https://english.bit.edu.cn/">Beijing Institute of Technology</a>, mainly interested in Natural Language Processing.<a href="about/">(more)</a>
+</p>
+
+<h1>Publications and Preprints</h1>
+
+<div class="posts-list" style="padding:0">
+    <p>(* indicates equal contribution)</p>
+    <div class="post">
+        DS-1000: A Natural and Reliable Benchmark for Data Science Code Generation
+        <small><i><b>arxiv</b></i></small>
+        <div class="author-list" style="font-size:small"><b>Yuhang Lai*</b>, Chengxi Li*, Yiming Wang*, Tianyi Zhang*, Ruiqi Zhong*, Luke Zettlemoyer, Scott Wen-tau Yih, Daniel Fried, Sida Wang, Tao Yu
+        </div>
+        <small><a href="https://arxiv.org/abs/2211.11501">[paper]</a> <a href="https://github.com/HKUNLP/DS-1000">[code]</a> <a href="https://ds1000-code-gen.github.io/">[page]</a> <a href="https://github.com/HKUNLP/DS-1000/tree/main/ds1000_example">[data]</a></small>
+    </div>
+    <!-- <br> -->
+</div>
+
+<h1>Latest Posts</h1>
+
+<div class="posts-list">
+{{ with .Site.GetPage "/posts" }}
+    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+        <div class="post">
+            <p>
+                <div class="date">{{ .PublishDate.Format "Jan 2, 2006" }}</div>
+                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+                {{ .Summary }}
+            </p>
+        </div>    
+    {{ end }}
+{{ end }}
+</div>
+
+<h1>
+    Contact
+</h1>
+<div class="posts-list" style="padding:0">
+    <div class="post">
+        <a href="mailto:laiyuhang01@gmail.com">[Email]</a>
+        <a href="https://github.com/halfrot">[GitHub]</a>
+    </div>
+</div>
+
+
+{{ end }}
