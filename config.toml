@@ -1,4 +1,4 @@
-baseurl = "https://halfrot.github.io/"
+baseURL = "https://halfrot.github.io/"
 title = "Yuhang Lai"
 theme = "hugo-theme-console"
 languageCode = "en-us"
