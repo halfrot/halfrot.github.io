@@ -4,7 +4,8 @@
     <title>Tags on Yuhang Lai</title>
     <link>https://halfrot.github.io/tags/</link>
     <description>Recent content in Tags on Yuhang Lai</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://halfrot.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://halfrot.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
